@@ -1,10 +1,6 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
-
   test "create a simple user" do
     assert_difference 'User.all.count', 1 do
       User.create name: 'user 01'
